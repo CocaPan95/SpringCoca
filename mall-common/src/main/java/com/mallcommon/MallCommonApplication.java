@@ -1,13 +1,13 @@
-package com.common;
+package com.mallcommon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CommonApplication {
+public class MallCommonApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CommonApplication.class, args);
+        SpringApplication.run(MallCommonApplication.class, args);
     }
 
 }
