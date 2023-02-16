@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatisbegin.mapper.OrderMapper">
+    <select id="GetOrderAll" resultType="com.mallcommon.domain.Orderss">
+        SELECT *
+        FROM Orderss
+    </select>
+    <select id="GetOrderCount" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM Orderss
+    </select>
+    <select id="GetOrder" resultType="com.mallcommon.domain.Orderss">
+        SELECT *
+        from Orderss
+        where OrderId = ${id}
+    </select>
+    <select id="GetOrderByNo" resultType="com.mallcommon.domain.Orderss" parameterType="java.lang.String">
+        SELECT *
+        from Orderss
+        where OrderNo LIKE CONCAT('%', #{OrderNo}, '%')
+    </select>
+    <select id="OrderQuery" resultType="com.mallcommon.domain.Orderss">
+        SELECT * from Orderss
+        where Vaild=true
+        <if test="OrderNo!=null and OrderNo!='' ">
+            AND OrderNo like CONCAT('%',#{OrderNo},'%')
+        </if>
+        <if test="OrderId>0 ">
+            AND OrderId=#{OrderId}
+        </if>
+    </select>
+    <insert id="InsertOrder" useGeneratedKeys="true" keyProperty="OrderId">
+        INSERT into Orderss
+        values (null, #{OrderNo}, #{UserId}, #{Status}, #{Comment}, date (), date (), true)
+    </insert>
+    <delete id="DeleteOrder">
+        DELETE
+        FROM Orderss
+        WHERE OrderId = #{Id}
+    </delete>
+    <update id="UpdateOrder">
+        UPDATE Orderss
+        SET UserId=#{UserId},
+            Status=#{Status},
+            Comment=#{Comment},
+            Vaild=#{Vaild},
+            UpdateTime= Date ()
+        WHERE OrderId=#{OrderId}
+    </update>
+</mapper>
