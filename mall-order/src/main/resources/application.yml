@@ -8,6 +8,5 @@ spring:
 
 mybatis:
   mapper-locations:
-    - classpath:mapper/*.xml
-    - classpath*:com/**/mapper/*.xml
-  type-aliases-package: com.mallcommon.domain
+    - classpath:dao/*.xml
+

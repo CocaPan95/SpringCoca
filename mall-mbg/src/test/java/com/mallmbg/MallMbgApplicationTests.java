@@ -1,10 +1,10 @@
-package com.springcoca;
+package com.mallmbg;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringCocaApplicationTests {
+class MallMbgApplicationTests {
 
     @Test
     void contextLoads() {
