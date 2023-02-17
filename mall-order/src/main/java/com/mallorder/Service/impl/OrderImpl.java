@@ -1,6 +1,6 @@
 package com.mallorder.Service.impl;
 
-import com.mallcommon.mapper.OrderMapper;
+
 import com.mallorder.Service.OrderService;
 import com.mallorder.dao.OrderDao;
 import com.mallcommon.domain.Orderss;
@@ -13,7 +13,7 @@ import java.util.List;
 @Service
 public class OrderImpl implements OrderService {
     @Autowired
-    private OrderMapper orderMapper;
+    private OrderDao orderMapper;
 
 
     public List<Orderss> GetOrderAll() {
