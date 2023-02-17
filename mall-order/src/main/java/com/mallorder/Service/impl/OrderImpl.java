@@ -1,6 +1,8 @@
 package com.mallorder.Service.impl;
 
 
+import com.mallcommon.exception.ApiException;
+import com.mallcommon.exception.Asserts;
 import com.mallcommon.service.RedisService;
 import com.mallorder.Service.OrderService;
 import com.mallorder.dao.OrderDao;
@@ -26,6 +28,7 @@ public class OrderImpl implements OrderService {
     private RedisService redisService;
 
     public List<Orderss> GetOrderAll() {
+        Asserts.fail("密码不正确");
         String keys=REDIS_DATABASE+":"+REDIS_KEY_RESOURCE_LIST+"GetOrderAll";
         List<Orderss> result=(List<Orderss>)redisService.get(keys);
         if (result==null){

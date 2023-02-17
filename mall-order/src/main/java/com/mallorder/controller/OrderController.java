@@ -5,11 +5,12 @@ import com.mallorder.Service.OrderService;
 import com.mallcommon.domain.Orderss;
 import com.mallcommon.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@Controller
 @RequestMapping("Order")
 public class OrderController {
     @Autowired
