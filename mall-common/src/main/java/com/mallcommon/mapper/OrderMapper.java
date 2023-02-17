@@ -1,7 +1,7 @@
-package mapper;
+package com.mallcommon.mapper;
 
-import domain.Orderss;
-import dto.UserDto;
+import com.mallcommon.domain.Orderss;
+import com.mallcommon.dto.UserDto;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

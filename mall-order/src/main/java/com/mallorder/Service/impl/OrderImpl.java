@@ -1,10 +1,9 @@
-package Service.impl;
+package com.mallorder.Service.impl;
 
-import Service.OrderService;
-import dao.OrderDao;
-import domain.Orderss;
-import dto.UserDto;
-import mapper.OrderMapper;
+import com.mallorder.Service.OrderService;
+import com.mallorder.dao.OrderDao;
+import com.mallcommon.domain.Orderss;
+import com.mallcommon.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

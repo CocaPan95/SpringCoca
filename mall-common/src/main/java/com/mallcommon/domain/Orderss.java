@@ -1,4 +1,4 @@
-package domain;
+package com.mallcommon.domain;
 
 import lombok.Data;
 import lombok.ToString;

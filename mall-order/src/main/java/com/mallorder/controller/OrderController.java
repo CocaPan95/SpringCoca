@@ -1,8 +1,8 @@
-package controller;
+package com.mallorder.controller;
 
-import Service.OrderService;
-import domain.Orderss;
-import dto.UserDto;
+import com.mallorder.Service.OrderService;
+import com.mallcommon.domain.Orderss;
+import com.mallcommon.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

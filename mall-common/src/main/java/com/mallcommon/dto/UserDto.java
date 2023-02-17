@@ -1,4 +1,4 @@
-package dto;
+package com.mallcommon.dto;
 
 import lombok.Data;
 

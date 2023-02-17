@@ -1,7 +1,7 @@
-package Service;
+package com.mallorder.Service;
 
-import domain.Orderss;
-import dto.UserDto;
+import com.mallcommon.domain.Orderss;
+import com.mallcommon.dto.UserDto;
 
 import java.util.List;
 
