@@ -6,7 +6,7 @@ import com.mallcommon.domain.Orderss;
 import com.mallcommon.dto.UserDto;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.v3.oas.annotations.tags.Tag;
+//import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@Api(tags = "OrderController")
-@Tag(name = "OrderController", description = "订单管理")
+@Api(tags = "OrderController", description = "商品品牌管理")
+//@Tag(name = "OrderController", description = "订单管理")
 @RequestMapping("Order")
 public class OrderController {
     @Autowired
@@ -64,7 +64,7 @@ public class OrderController {
     }
 
     @ApiOperation("获取所有收货地址")
-    @RequestMapping("DeleteOrder")
+    @DeleteMapping("DeleteOrder")
     public CommonResult<Integer> DeleteOrder(Integer OrderId) {
         int result= orderService.DeleteOrder(OrderId);
         return CommonResult.success(result);
