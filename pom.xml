@@ -15,11 +15,19 @@
     <description>SpringCoca</description>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>mall-common</module>
+        <module>mall-mbg</module>
+        <module>mall-order</module>
+        <module>mall-product</module>
+    </modules>
+
     <properties>
         <java.version>1.8</java.version>
         <springfox-swagger.version>3.0.0</springfox-swagger.version>
         <swagger-models.version>1.6.0</swagger-models.version>
         <swagger-annotations.version>1.6.0</swagger-annotations.version>
+        <jaxb-api.version>2.3.1</jaxb-api.version>
     </properties>
 
     <dependencies>
@@ -75,6 +83,24 @@
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
             <version>${swagger-annotations.version}</version>
+        </dependency>
+
+        <!--Hutool Java工具包-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.5.7</version>
+        </dependency>
+        <!--JWT(Json Web Token)登录支持-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>${jaxb-api.version}</version>
         </dependency>
     </dependencies>
 
