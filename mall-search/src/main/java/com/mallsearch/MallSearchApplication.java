@@ -1,13 +1,13 @@
-package com.mallproduct;
+package com.mallsearch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MallProductApplication {
+public class MallSearchApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MallProductApplication.class, args);
+        SpringApplication.run(MallSearchApplication.class, args);
     }
 
 }

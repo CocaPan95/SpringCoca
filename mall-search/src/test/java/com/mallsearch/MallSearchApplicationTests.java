@@ -1,10 +1,10 @@
-package com.mallproduct;
+package com.mallsearch;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MallProductApplicationTests {
+class MallSearchApplicationTests {
 
     @Test
     void contextLoads() {

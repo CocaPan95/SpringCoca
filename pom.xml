@@ -19,7 +19,8 @@
         <module>mall-common</module>
         <module>mall-mbg</module>
         <module>mall-order</module>
-        <module>mall-product</module>
+        <module>mall-search</module>
+        <module>mall-security</module>
     </modules>
 
     <properties>
@@ -89,7 +90,7 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>4.5.7</version>
+            <version>5.8.9</version>
         </dependency>
         <!--JWT(Json Web Token)登录支持-->
         <dependency>
