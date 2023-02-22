@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0b59e74-a057-498e-aa51-c74d719d434d" name="Changes" comment="合并修改">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b0b59e74-a057-498e-aa51-c74d719d434d" name="Changes" comment="封装Mongodb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/mallcommon/config/BaseSwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/mallcommon/config/BaseSwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/target/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/controller/MemberReadHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/dao/controller/MemberReadHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/controller/UmsMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/dao/controller/UmsMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/UmsMemberCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/UmsMemberCacheService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/UmsMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/UmsMemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/impl/UmsMemberCacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/impl/UmsMemberCacheServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/impl/UmsMemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/impl/UmsMemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -47,26 +51,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/project/SpringCoca/mall-portal/src/main/java/com/mallportal/config",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
-    "spring.configuration.checksum": "a6246c77e8dce9411db09dc50965def0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/project/SpringCoca/mall-portal/src/main/resources/dao&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
+    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ab80aa988fd78788ae554f1e4f524e27&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\SpringCoca\mall-portal\src\main\resources\dao" />
       <recent name="D:\project\SpringCoca\mall-portal\src\main\java\com\mallportal\config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -123,6 +129,8 @@
       <option name="presentableId" value="Default" />
       <updated>1676684015562</updated>
       <workItem from="1676684083463" duration="1500000" />
+      <workItem from="1677034875917" duration="7253000" />
+      <workItem from="1677046595565" duration="1659000" />
     </task>
     <task id="LOCAL-00001" summary="合并修改">
       <created>1676960634535</created>
@@ -131,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676960634535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="封装Mongodb">
+      <created>1676973958712</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676973958712</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +165,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="合并修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并修改" />
+    <MESSAGE value="封装Mongodb" />
+    <option name="LAST_COMMIT_MESSAGE" value="封装Mongodb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -161,7 +177,7 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/controller/UmsMemberController.java</url>
+          <url>file://$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/dao/controller/UmsMemberController.java</url>
           <line>46</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>

@@ -1,6 +1,7 @@
 package com.mallportal.service.impl;
 
 import com.mallcommon.service.RedisService;
+import com.mallmbg.mapper.UmsMemberMapper;
 import com.mallmbg.model.UmsMember;
 import com.mallportal.service.UmsMemberCacheService;
 import com.mallsecurity.annotation.CacheException;
@@ -20,6 +21,8 @@ public class UmsMemberCacheServiceImpl implements UmsMemberCacheService {
     private String REDIS_KEY_AUTH_CODE;
     @Autowired
     private RedisService redisService;
+    @Autowired
+    private UmsMemberMapper memberMapper;
 
     @Override
     public UmsMember getMember(String username) {
@@ -36,5 +39,13 @@ public class UmsMemberCacheServiceImpl implements UmsMemberCacheService {
     public String getAuthCode(String telephone) {
         String key = REDIS_DATABASE + ":" + REDIS_KEY_AUTH_CODE + ":" + telephone;
         return (String) redisService.get(key);
+    }
+    @Override
+    public void delMember(Long memberId) {
+        UmsMember umsMember = memberMapper.selectByPrimaryKey(memberId);
+        if (umsMember != null) {
+            String key = REDIS_DATABASE + ":" + REDIS_KEY_MEMBER + ":" + umsMember.getUsername();
+            redisService.del(key);
+        }
     }
 }

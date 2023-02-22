@@ -126,6 +126,22 @@ public class UmsMemberServiceImpl implements UmsMemberService {
         return token;
     }
 
+
+    @Override
+    public void updateIntegration(Long id, Integer integration) {
+        UmsMember record=new UmsMember();
+        record.setId(id);
+        record.setIntegration(integration);
+        memberMapper.updateByPrimaryKeySelective(record);
+        memberCacheService.delMember(id);
+    }
+
+    @Override
+    public UmsMember getById(Long id) {
+        return memberMapper.selectByPrimaryKey(id);
+    }
+
+
     private boolean verifyAuthCode(String authCode, String telephone){
         if(StrUtil.isEmpty(authCode)){
             return false;

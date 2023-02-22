@@ -16,4 +16,8 @@ public interface UmsMemberCacheService {
      * 获取验证码
      */
     String getAuthCode(String telephone);
+    /**
+     * 删除会员用户缓存
+     */
+    void delMember(Long memberId);
 }

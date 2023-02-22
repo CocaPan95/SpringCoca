@@ -1,4 +1,4 @@
-package com.mallportal.controller;
+package com.mallportal.dao.controller;
 
 import com.mallcommon.api.CommonResult;
 import com.mallportal.service.UmsMemberService;
