@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0b59e74-a057-498e-aa51-c74d719d434d" name="Changes" comment="封装Mongodb">
+    <list default="true" id="b0b59e74-a057-498e-aa51-c74d719d434d" name="Changes" comment="下单相关功能和rabbitmq">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/controller/MemberReadHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/dao/controller/MemberReadHistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/controller/UmsMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/dao/controller/UmsMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/UmsMemberCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/UmsMemberCacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/UmsMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/UmsMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/impl/UmsMemberCacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/impl/UmsMemberCacheServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/impl/UmsMemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/mallportal/service/impl/UmsMemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +122,7 @@
       <updated>1676684015562</updated>
       <workItem from="1676684083463" duration="1500000" />
       <workItem from="1677034875917" duration="7253000" />
-      <workItem from="1677046595565" duration="1659000" />
+      <workItem from="1677046595565" duration="2595000" />
     </task>
     <task id="LOCAL-00001" summary="合并修改">
       <created>1676960634535</created>
@@ -146,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676973958712</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="下单相关功能和rabbitmq">
+      <created>1677048582885</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677048582885</updated>
+    </task>
+    <task id="LOCAL-00004" summary="下单相关功能和rabbitmq">
+      <created>1677048718987</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677048718987</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +172,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="合并修改" />
     <MESSAGE value="封装Mongodb" />
-    <option name="LAST_COMMIT_MESSAGE" value="封装Mongodb" />
+    <MESSAGE value="下单相关功能和rabbitmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="下单相关功能和rabbitmq" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
